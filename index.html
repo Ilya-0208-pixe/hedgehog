@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ёжики</title>
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="body no-js">
+
+  <header class="header">
+    <nav class="main-nav">
+      <a class="main-nav__logo">
+        <img src="img/logo.svg" width="120" height="56" alt="Логотип Ёжики">
+      </a>
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="main-nav__list list-reset">
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__link--active">
+            Каталог
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">
+            О нас
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">
+            Контакты
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">
+            Галерея
+          </a>
+        </li>
+      </ul>
+      <ul class="main-nav__list list-reset">
+        <li class="main-nav__item">
+          <a class="nav-phone main-nav__link" href="tel:+79655698998">+7 (965) 569-89-98</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Корзина
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main-container">
+    <section class="intro">
+      <div class="intro__wrapper">
+        <picture>
+          <img src="img/hedgehogs.svg" srcset="img/photo-city-mobile@2x.jpg 2x" width="495" height="95" alt="Ёжики">
+        </picture>
+        <p class="intro__slogan">
+          тоже любят молоко
+        </p>
+        <p class="intro__description">
+          Заведите себе ёжика. Он всегда выслушает, не будет мяукать в 5 утра и царапать вашу мебель.
+        </p>
+      </div>
+    </section>
+    <section class="activity">
+      <h2 class="visually-hidden">Преимущества</h2>
+      <ul class="activity__list list-reset">
+        <li class="activity__item">
+          <div class="activity__item-wrapper">
+            <div class="activity__image">
+              <picture>
+                <img src="img/openmoji-hedgehog.svg" srcset="img/photo-city-mobile@2x.jpg 2x" width="72" height="72"
+                  alt="ёжик">
+              </picture>
+            </div>
+            <div class="activity__wrapper">
+              <h3 class="activity__title">разведение ежиков</h3>
+              <p class="activity__description">
+                Собственная ферма, уход и содержание
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="activity__item">
+          <div class="activity__item-wrapper">
+            <div class="activity__image">
+              <picture>
+                <img src="img/syringe.svg" srcset="img/photo-city-mobile@2x.jpg 2x" width="46" height="46"
+                  alt="здоровье">
+              </picture>
+            </div>
+            <div class="activity__wrapper">
+              <h3 class="activity__title">здоровье</h3>
+              <p class="activity__description">
+                Всегда прививаем и вовремя обследуем ваших будущих питомцев
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="aactivity__item">
+          <div class="activity__item-wrapper">
+            <div class="activity__image">
+              <picture>
+                <img src="img/heart-twotone.svg" srcset="img/photo-city-mobile@2x.jpg 2x" width="43" height="43"
+                  alt="любовь">
+              </picture>
+            </div>
+            <div class="activity__wrapper">
+              <h3 class="aactivity__title">любовь и забота</h3>
+              <p class="activity__description">
+                Каждому ежику мы дарим много внимания
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="cards">
+      <h2 class="visually-hidden">Каталог</h2>
+      <ul class="cards__list list-reset">
+        <li class="cards__item">
+          <div class="cards__wrapper">
+            <div class="cards__description">
+              <h2 class="cards__title">Ежик “Евгений”</h2>
+              <p class="cards__author">Очень любит сладости. Маленький сладкоежка=) Мы называем его так
+                между собой. Ручной, любит внимание</p>
+              <p class="old-price">3 000 ₽</p>
+              <p class="new-price">1 500 ₽</p>
+            </div>
+            <a class="cards__image">
+              <picture>
+                <img src="img/removebg1.jpg" srcset="img/road-mobile@2x.jpg 2x" width="363" height="265" alt="ёжик1">
+              </picture>
+            </a>
+            <button class="cards__like" type="button">
+              <span class="visually-hidden">добавить</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                <path
+                  d="M25.6667 12.3333H15.6667V2.33332C15.6667 1.8913 15.4911 1.46737 15.1785 1.15481C14.866 0.842252 14.442 0.666656 14 0.666656C13.558 0.666656 13.1341 0.842252 12.8215 1.15481C12.5089 1.46737 12.3334 1.8913 12.3334 2.33332V12.3333H2.33335C1.89133 12.3333 1.4674 12.5089 1.15484 12.8215C0.842282 13.134 0.666687 13.558 0.666687 14C0.666687 14.442 0.842282 14.8659 1.15484 15.1785C1.4674 15.4911 1.89133 15.6667 2.33335 15.6667H12.3334V25.6667C12.3334 26.1087 12.5089 26.5326 12.8215 26.8452C13.1341 27.1577 13.558 27.3333 14 27.3333C14.442 27.3333 14.866 27.1577 15.1785 26.8452C15.4911 26.5326 15.6667 26.1087 15.6667 25.6667V15.6667H25.6667C26.1087 15.6667 26.5326 15.4911 26.8452 15.1785C27.1578 14.8659 27.3334 14.442 27.3334 14C27.3334 13.558 27.1578 13.134 26.8452 12.8215C26.5326 12.5089 26.1087 12.3333 25.6667 12.3333Z"
+                  fill="#195557" />
+              </svg>
+            </button>
+          </div>
+        </li>
+        <li class="cards__item">
+          <div class="cards__wrapper">
+            <div class="cards__description">
+              <h2 class="cards__title">Ежик “Максим”</h2>
+              <p class="cards__author">ОНемного игривый и задорный характер этого друга никого не оставит
+                равнодушным!</p>
+              <p class="old-price">5 000 ₽</p>
+              <p class="new-price">2 500 ₽</p>
+            </div>
+            <a class="cards__image">
+              <picture>
+                <img src="img/removebg2.jpg" srcset="img/road-mobile@2x.jpg 2x" width="385" height="280" alt="ёжик2">
+              </picture>
+            </a>
+            <button class="cards__like" type="button">
+              <span class="visually-hidden">добавить</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                <path
+                  d="M25.6667 12.3333H15.6667V2.33332C15.6667 1.8913 15.4911 1.46737 15.1785 1.15481C14.866 0.842252 14.442 0.666656 14 0.666656C13.558 0.666656 13.1341 0.842252 12.8215 1.15481C12.5089 1.46737 12.3334 1.8913 12.3334 2.33332V12.3333H2.33335C1.89133 12.3333 1.4674 12.5089 1.15484 12.8215C0.842282 13.134 0.666687 13.558 0.666687 14C0.666687 14.442 0.842282 14.8659 1.15484 15.1785C1.4674 15.4911 1.89133 15.6667 2.33335 15.6667H12.3334V25.6667C12.3334 26.1087 12.5089 26.5326 12.8215 26.8452C13.1341 27.1577 13.558 27.3333 14 27.3333C14.442 27.3333 14.866 27.1577 15.1785 26.8452C15.4911 26.5326 15.6667 26.1087 15.6667 25.6667V15.6667H25.6667C26.1087 15.6667 26.5326 15.4911 26.8452 15.1785C27.1578 14.8659 27.3334 14.442 27.3334 14C27.3334 13.558 27.1578 13.134 26.8452 12.8215C26.5326 12.5089 26.1087 12.3333 25.6667 12.3333Z"
+                  fill="#195557" />
+              </svg>
+            </button>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="form">
+      <h2>Заполните заявку и мы забронируем для Вас нового друга</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="form__fieldset form__fieldset--feedback">
+          <h2 class="visually-hidden">
+            <span>Количество ёжиков</span>
+          </h2>
+          <ul>
+            <li>
+              <div class="form_radio_btn">
+                <input id="radio-1" type="radio" name="radio" value="1" checked>
+                <label for="radio-1">хочу ёжика для себя</label>
+              </div>
+            </li>
+            <li>
+              <div class="form_radio_btn">
+                <input id="radio-2" type="radio" name="radio" value="1" checked>
+                <label for="radio-2">хочу ёжика для детей</label>
+              </div>
+            </li>
+            <li>
+              <div class="form_radio_btn">
+                <input id="radio-3" type="radio" name="radio" value="1" checked>
+                <label for="radio-3">хочу ёжика для разведения</label>
+              </div>
+            </li>
+          </ul>
+
+          <div class="form_radio">
+            <div class="form_radio_btn">
+              <input id="radio-1" type="radio" name="radio" value="1" checked>
+              <label for="radio-1">Radio button 1</label>
+            </div>
+
+            <div class="form_radio_btn">
+              <input id="radio-2" type="radio" name="radio" value="2">
+              <label for="radio-2">Radio button 2</label>
+            </div>
+
+            <div class="form_radio_btn">
+              <input id="radio-4" type="radio" name="radio" value="4" disabled>
+              <label for="radio-4">Disabled</label>
+            </div>
+
+            <ul class="form__options list-reset">
+              <li class="form__options-item">
+                <label class="form__options-label form__options-label--radio" for="filter-positive">Мне
+                  нужен 1-2 ёжика
+                  <input class="form__options-input visually-hidden" type="radio" name="feedback" value="положительное"
+                    id="filter-positive" checked>
+                  <span class="form__control-mark"></span>
+                </label>
+              </li>
+              <li class="form__options-item">
+                <label class="form__options-label form__options-label--radio" for="filter-negative">Мне
+                  нужны 3-4 ёжика
+                  <input class="form__options-input visually-hidden" type="radio" name="feedback" value="отрицательное"
+                    id="filter-negative">
+                  <span class="form__control-mark"></span>
+                </label>
+              </li>
+              <li class="form__options-item">
+                <label class="form__options-label form__options-label--radio" for="filter-difficult">Мне
+                  нужны 3 и более ёжиков
+                  <input class="form__options-input visually-hidden" type="radio" name="feedback" value="затрудняюсь"
+                    id="filter-difficult">
+                  <span class="form__control-mark"></span>
+                </label>
+              </li>
+              <li class="form__options-item">
+                <label class="form__options-label form__options-label--radio" for="filter-difficult">Пока
+                  присматриваюсь
+                  <input class="form__options-input visually-hidden" type="radio" name="feedback" value="затрудняюсь"
+                    id="filter-difficult">
+                  <span class="form__control-mark"></span>
+                </label>
+              </li>
+            </ul>
+        </fieldset>
+        <div class="form__wrapper-fieldset">
+          <fieldset class="form__fieldset form__fieldset--data">
+            <h2 class="visually-hidden">Представьтесь:</h2>
+            <ul class="form__contact-list list-reset">
+              <li class="form__contact-item">
+                <label class="form__contact-label" for="name"></label>
+                <input class="form__contact-input" id="name" type="text" name="name" value="Ваше имя" placeholder="Имя"
+                  required>
+              </li>
+              <li class="form__contact-item">
+                <label class="form__contact-label" for="phone"></label>
+                <input class="form__contact-input" id="phone" type="text" name="phone" value="Ваш телефон"
+                  placeholder="Ваш телефон" required>
+              </li>
+              <li class="form__contact-item">
+                <label class="form__contact-label" for="patronymic"></label>
+                <input class="form__contact-input" id="e-mail" type="text" name="e-mail" value="Ваш e-mail">
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+
+        <fieldset class="form__fieldset form__fieldset--recall">
+          <textarea id="recall-field" name="emotion" placeholder="Комментарий к заявке"></textarea>
+        </fieldset>
+        <fieldset class="form__fieldset form__fieldset--submit">
+          <button class="form__submit button" type="submit">Купить ёжика</button>
+          <span class="form__note">У на осталось еще: 25 ёжиков</span>
+          <span>Торопитесь! Акция действует до 26. 02. 2023</span>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+  <footer class="footer">
+    <nav class="main-nav">
+      <a class="main-nav__logo">
+        <img src="img/logo.svg" width="120" height="56" alt="Логотип Ёжики">
+      </a>
+      <p>
+        Все права защищены.<br>Указанная стоимость товаров и условия их приобретения действительны на текущую
+        дату.
+      </p>
+      <ul class="footer__social-list">
+        <li class="main-nav__item">
+          <a href="#">
+            Каталог
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a>
+            О нас
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#">
+            Контакты
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#">
+            Галерея
+          </a>
+        </li>
+      </ul>
+      <ul class="main-nav__list list-reset">
+        <li class="footer__item">
+          <a href="#">
+            <span class="visually-hidden">Инстаграм</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+              <path
+                d="M15 0C6.66667 0 0 6.66667 0 15C0 23.3333 6.66667 30 15 30C23.3333 30 30 23.3333 30 15C30 6.66667 23.3333 0 15 0ZM15 11.6667C16.8333 11.6667 18.3333 13.1667 18.3333 15C18.3333 16.8333 16.8333 18.3333 15 18.3333C13.1667 18.3333 11.6667 16.8333 11.6667 15C11.6667 13.1667 13.1667 11.6667 15 11.6667ZM19.6667 8.33333C19.6667 7.16667 20.6667 6.33333 21.6667 6.33333C22.6667 6.33333 23.6667 7.33333 23.6667 8.33333C23.6667 9.33333 22.8333 10.3333 21.6667 10.3333C20.5 10.3333 19.6667 9.5 19.6667 8.33333ZM15 26.6667C8.5 26.6667 3.33333 21.5 3.33333 15H8.33333C8.33333 18.6667 11.3333 21.6667 15 21.6667C18.6667 21.6667 21.6667 18.6667 21.6667 15H26.6667C26.6667 21.5 21.5 26.6667 15 26.6667Z"
+                fill="white" />
+            </svg>
+          </a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link footer__link--instagram" href="#">
+            <span class="visually-hidden">Фейсбук</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <path
+                d="M30.59 9.37333C27.6733 6.47167 24.11 5 20 5C15.8517 5 12.2783 6.47333 9.37833 9.375C6.47333 12.2767 5 15.8533 5 20C5 24.1083 6.47167 27.6717 9.37333 30.59C12.275 33.5167 15.85 35 20 35C24.1117 35 27.675 33.5167 30.5933 30.595C33.5183 27.6733 35 24.1083 35 20C35 15.8533 33.5167 12.2767 30.59 9.37333ZM28.2367 28.2383C26.3417 30.1367 24.1767 31.2183 21.6667 31.5467V23.3333H25V20H21.6667V17.6667C21.6667 17.5352 21.6926 17.405 21.7429 17.2836C21.7933 17.1622 21.8671 17.0518 21.9601 16.959C22.0532 16.8661 22.1636 16.7925 22.2851 16.7423C22.4067 16.6922 22.5369 16.6664 22.6683 16.6667H25V13.3333H22.6717C21.435 13.3333 20.4033 13.7883 19.5767 14.7033C18.75 15.615 18.3333 16.7283 18.3333 18.05V20H15V23.3333H18.3333V31.55C15.7967 31.225 13.6233 30.1417 11.7383 28.2433C9.44667 25.9367 8.33333 23.24 8.33333 20C8.33333 16.7233 9.445 14.02 11.7367 11.7333C14.02 9.445 16.7233 8.33333 20 8.33333C23.2417 8.33333 25.9367 9.44667 28.2417 11.7383C30.5467 14.025 31.6667 16.7283 31.6667 20C31.6667 23.235 30.545 25.9317 28.2367 28.2383Z"
+                fill="white" />
+            </svg>
+          </a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link footer__link--instagram" href="#">
+            <span class="visually-hidden">Твиттер</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <path
+                d="M25.465 17.1383C26.0617 16.77 26.46 16.27 26.6533 15.6317C26.1067 15.9276 25.52 16.1426 24.9117 16.27C24.6629 15.9964 24.3583 15.7793 24.0184 15.6335C23.6786 15.4877 23.3114 15.4166 22.9417 15.425C22.1683 15.425 21.5167 15.6967 20.9833 16.2233C20.7264 16.474 20.5232 16.7745 20.3862 17.1063C20.2493 17.4381 20.1814 17.7944 20.1867 18.1533C20.1867 18.3817 20.215 18.5867 20.2733 18.76C17.9933 18.68 16.1083 17.7367 14.6217 15.9167C14.3778 16.3311 14.2473 16.8025 14.2433 17.2833C14.2433 18.2467 14.65 19.01 15.46 19.5717C15.0344 19.5429 14.6197 19.4242 14.2433 19.2233C14.2433 19.9117 14.445 20.4867 14.8517 20.9933C15.2567 21.4933 15.78 21.8133 16.4167 21.9483C16.1797 22.0083 15.9361 22.038 15.6917 22.0367C15.5248 22.0462 15.3577 22.0253 15.1983 21.975C15.3717 22.5367 15.6917 22.99 16.155 23.3383C16.6167 23.6883 17.15 23.8717 17.75 23.8883C16.787 24.654 15.5885 25.0627 14.3583 25.045C14.045 25.045 13.825 25.0417 13.6917 25.0167C14.9411 25.8293 16.4029 26.2544 17.8933 26.2383C19.4783 26.2383 20.88 25.8367 22.0967 25.0333C23.3133 24.235 24.215 23.25 24.7917 22.0883C25.3627 20.9659 25.6602 19.7243 25.66 18.465V18.1167C26.22 17.695 26.675 17.22 27.0233 16.6933C26.5275 16.9144 26.0028 17.0643 25.465 17.1383ZM20 35C15.85 35 12.275 33.5167 9.37333 30.59C6.47167 27.6717 5 24.1083 5 20C5 15.8533 6.47333 12.2767 9.37833 9.375C12.2783 6.47333 15.8517 5 20 5C24.11 5 27.6733 6.47167 30.59 9.37333C33.5167 12.2767 35 15.8533 35 20C35 24.1083 33.5183 27.6733 30.5933 30.595C27.675 33.5167 24.1117 35 20 35ZM20 8.33333C16.7233 8.33333 14.02 9.445 11.7367 11.7333C9.445 14.02 8.33333 16.7233 8.33333 20C8.33333 23.24 9.44667 25.9367 11.7383 28.2417C14.025 30.5467 16.7267 31.6667 20 31.6667C23.2383 31.6667 25.9333 30.545 28.2367 28.2383C30.545 25.9317 31.6667 23.235 31.6667 20C31.6667 16.7283 30.5467 14.025 28.2417 11.7383C25.9367 9.44667 23.2417 8.33333 20 8.33333Z"
+                fill="white" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <a class="nav-phone" href="tel:+79655698998">+7 (965) 569-89-98</a>
+    </nav>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
